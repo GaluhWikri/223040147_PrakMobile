@@ -1,7 +1,6 @@
 import java.util.Scanner
 
 fun main() {
-
     val scanner = Scanner(System.`in`)
     print("Masukkan panjang: ")
     val panjang = scanner.nextDouble()
@@ -25,3 +24,5 @@ class PersegiPanjang(private val panjang: Double, private val lebar: Double) {
         return 2 * (panjang + lebar)
     }
 }
+
+

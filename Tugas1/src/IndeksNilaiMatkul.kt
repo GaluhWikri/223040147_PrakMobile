@@ -9,14 +9,15 @@ fun main() {
         if (nilai == null) {
             println("Nilai harus diisi dan berupa angka.")
         } else {
-            println("$nomor $input ${getIndeks(nilai)}")
+            println("$nomor $input ${IndeksNilaiMatkul(nilai)}")
         }
         nomor++
     }
 }
 
+
 // Fungsi untuk menentukan indeks berdasarkan nilai
-fun getIndeks(nilai: Int?): String {
+fun IndeksNilaiMatkul(nilai: Int?): String {
     return when {
         nilai == null -> "Nilai harus diisi"
         nilai in 80..100 -> "A"
